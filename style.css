@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Twinkle+Star&display=swap');
+
+*{   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3));
+    position: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 0.5 opacity */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.5; 
+}
+
+.content {
+    text-align: center;
+    z-index: 1; /* Ensuring the content is above the background image */
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1{
+    font-size: 100px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.hero-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 130%;
+    width: 100%;
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+    background: #091D2B;
+    position: 0 5%;
+}
+
+.about h1{
+    color: #fefaee;
+    font-family: 'Shantell-Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.explore {
+    width: 100%;
+    height: 100vh;
+    background: #091D2B;
+    padding-top: 20px; /* Adjust the padding as needed */
+    padding-bottom: 20px; /* Adjust the padding as needed */
+}
+
+.exploretitle {
+    color: #fefaee;
+    font-size: 20px;
+    text-align: center;
+    background-color: #091D2B; /* Match the background color */
+    padding-top: 20px; /* Adjust the padding as needed */
+    padding-bottom: 7px; /* Adjust the padding as needed */
+}
+
+.text{
+    color: #fff;
+    text-align: center;
+}
+
+/* Styling the area of the slides */
+
+#slideshow {
+    overflow: hidden;
+    height: 450px;
+    width: 728px;
+    margin: 0 auto;
+    background-color: #042444; /* Match the background color */
+}
+
+/* Style each of the sides 
+  with a fixed width and height */
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+ 
+/* Add animation to the slides */
+.slide-wrapper {
+ 
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(728px * 4);
+ 
+    /* Specify the animation with the
+    duration and speed */
+    animation: slide 10s ease infinite;
+}
+ 
+/* Set the background color
+  of each of the slides */
+.slide:nth-child(1) {
+    background: green;
+}
+ 
+.slide:nth-child(2) {
+    background: pink;
+}
+ 
+.slide:nth-child(3) {
+    background: red;
+}
+ 
+.slide:nth-child(4) {
+    background: yellow;
+}
+
+.brazil{
+    width: 100%;
+    height: 100%;
+}
+ 
+.newyork{
+    width: 100%;
+    height: 100%;
+}
+
+.doha{
+    width: 100%;
+    height: 100%;
+}
+
+.greece{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Define the animation 
+  for the slideshow */
+@keyframes slide {
+ 
+    /* Calculate the margin-left for 
+    each of the slides */
+    20% {
+        margin-left: 0px;
+    }
+ 
+    40% {
+        margin-left: calc(-728px * 1);
+    }
+ 
+    60% {
+        margin-left: calc(-728px * 2);
+    }
+ 
+    80% {
+        margin-left: calc(-728px * 3);
+    }
+}
+
+.button1{
+    margin-top: 1em;
+}
+
+button{
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #042444, #156f7b);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    margin-top: 0.5em;
+    padding: 0.5em 5em;
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+}
+
+button:hover{
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+    cursor: pointer;
+}
+   
+@keyframes pulse512 {
+    0%{
+     box-shadow: 0 0 0 0 #05bada66;
+}
+   
+70%{
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+}
+   
+100%{
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+
+.wrapper{
+    padding-top: 7em;
+}
+
+.wrapper-1{
+    display: flex;
+    align-items: center; /* Optional: if you want to align items vertically */
+}
+
+.image {
+    max-width: 450px;
+    max-height: 490px;
+    border-radius: 10px;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.text-box p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    margin: 20px 3px; /* Add vertical spacing */
+    line-height: 1.4; /* Add 1.5 spacing */
+    margin-left: 2em;
+    margin-right: 2em;
+    color: #fefaee;
+}
+
+.text-box li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    margin: 20px 3px; /* Add vertical spacing */
+    line-height: 1.4; /* Add 1.5 spacing */
+    margin-left: 3em;
+    margin-right: 2em;
+    color: #fefaee;
+}
+
+.stats-box{
+    background: #091D2B;
+    padding-top: 10px; /* Adjust the padding as needed */
+    padding-bottom: 20px; /* Adjust the padding as needed */
+    text-align: center;
+    color: #fefaee;
+}
+
+.stats{
+    display: flex;
+    color: #fefaee;
+    justify-content: space-around;
+    width: 100%;
+    height: 20vh;
+    background: #091D2B;
+    margin-top: 4%;
+    padding-top: 20px; /* Adjust the padding as needed */
+    padding-bottom: 20px; /* Adjust the padding as needed */
+}
+
+.number-1{
+    font-size: 50px;
+}
+
+.stats h1{
+    font-size: 23px;
+    font-family: Twinkle Star;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.Contact-title{
+    display: flex;
+    color: #fefaee;
+    justify-content: space-around;
+    width: 100%;
+    background: #091D2B;
+    padding-top: 20px; /* Adjust the padding as needed */
+    text-align: center;
+
+}
+
+.Contact{
+    display: flex;
+    color: #fefaee;
+    justify-content: space-around;
+    width: 100%;
+    height: 67vh;
+    background: #091D2B;
+    padding-top: 20px; /* Adjust the padding as needed */
+    padding-bottom: 20px; /* Adjust the padding as needed */
+}
+
+.Contact h1{
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #355891;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+  
+.message {
+    color: #355891;
+    font-size: 14px;
+}
+  
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+  
+.form label {
+    position: relative;
+}
+  
+.form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid #355891;
+    border-radius: 5px;
+}
+  
+.form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #355891;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+  
+.form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+}
+  
+.form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+  
+.form label .input:valid + span {
+    color: green;
+}
+  
+.input01 {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid #355891;
+    border-radius: 5px;
+}
+  
+.form label .input01 + span {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    color: #355891;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+  
+.form label .input01:placeholder-shown + span {
+    top: 40px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input01:focus + span,.form label .input01:valid + span {
+    top: 50px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input01:valid + span {
+    color: green;
+  }
+  
+  .fancy {
+    background-color: white;
+    border: 2px solid #355891;
+    border-radius: 0px;
+    box-sizing: border-box;
+    color: #355891;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 390;
+    letter-spacing: 2px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 8px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+  }
+  
+  .fancy::before {
+    content: " ";
+    width: 1.7rem;
+    height: 2px;
+    background: #355891;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform: translateX(230%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+  }
+  
+  .fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #355891;
+    transform: translateX(30%);
+  }
+  
+  .fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #355891;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+  }
+  
+  .fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #355891;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+  
+.fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #355891;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+  
+.fancy:hover {
+    color: #355891;
+    background: #5f82a9;
+}
+  
+.fancy:hover::before {
+    width: 1.5rem;
+    background: #355891;
+}
+  
+.fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+  }
+  
+.fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+}
+  
+.fancy:hover .bottom-key-1,.fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+  }
